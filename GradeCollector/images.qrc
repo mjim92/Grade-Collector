@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>A_grade.jpg</file>
+        <file>B_grade.jpg</file>
+        <file>c_grade.jpg</file>
+        <file>cartoonGrad.gif</file>
+        <file>D_grade.jpg</file>
+        <file>diploma.jpg</file>
+        <file>F_grade.jpg</file>
+        <file>student.jpg</file>
+        <file>Gorillaz Dare.mp3</file>
+    </qresource>
+</RCC>

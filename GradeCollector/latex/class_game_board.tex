@@ -1,0 +1,223 @@
+\hypertarget{class_game_board}{}\section{Game\+Board Class Reference}
+\label{class_game_board}\index{Game\+Board@{Game\+Board}}
+
+
+class that creates a game board.  
+
+
+
+
+{\ttfamily \#include $<$gameboard.\+h$>$}
+
+Inheritance diagram for Game\+Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_board}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_game_board_ae3c962a1819154c9f92910f1010019d3}{update\+Fs} ()
+\begin{DoxyCompactList}\small\item\em It updates the location of the F\textquotesingle{}s. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_game_board_a82c080b6518e1cf7753e71785c3afdcf}{}void {\bfseries game\+\_\+over} ()\label{class_game_board_a82c080b6518e1cf7753e71785c3afdcf}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_game_board_a02e83c0384303c16e8155ca759b882d0}{Game\+Board} (Q\+Widget $\ast$parent=0, size\+\_\+t board\+\_\+size=10, size\+\_\+t f\+\_\+speed=10, size\+\_\+t number\+\_\+of\+\_\+fs=1)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_board}{Game\+Board} constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_game_board_a48e19b4953c87cc5eea1f9152d09499e}{$\sim$\+Game\+Board} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_board_a48e19b4953c87cc5eea1f9152d09499e}{Game\+Board\+::$\sim$\+Game\+Board}. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_board_a3fdf1e6bfcc24a0930196be5fc3150c1}{key\+Press\+Event} (Q\+Key\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_board_a3fdf1e6bfcc24a0930196be5fc3150c1}{Game\+Board\+::key\+Press\+Event}. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_board_a07896dc68fa3dc7ab7206e20da4c8dea}{paint\+Event} (Q\+Paint\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_board_a07896dc68fa3dc7ab7206e20da4c8dea}{Game\+Board\+::paint\+Event}. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_board_a8cf0f1726da9d4fdfe9d044d290aca9d}{show\+Event} (Q\+Show\+Event $\ast$e)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_board_a8cf0f1726da9d4fdfe9d044d290aca9d}{Game\+Board\+::show\+Event}. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_board_ad0652bc1afe57f5c90363ff23b085f1d}{munch\+Grade} (int x, int y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_board_ad0652bc1afe57f5c90363ff23b085f1d}{Game\+Board\+::munch\+Grade}. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_board_a41ac6cca98e3f787414574d1aeaac2d0}{update\+Student} (int px, int py, int nx, int ny)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_board_a41ac6cca98e3f787414574d1aeaac2d0}{Game\+Board\+::update\+Student}. \end{DoxyCompactList}\item 
+void \hyperlink{class_game_board_a705640e76fa5aaad98b40eec1a9ad9b1}{update\+After\+Munch} (bool flag)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_game_board_a705640e76fa5aaad98b40eec1a9ad9b1}{Game\+Board\+::update\+After\+Munch}. \end{DoxyCompactList}\item 
+\hypertarget{class_game_board_a68897815653f92727fff6cba9e07109b}{}bool {\bfseries is\+Valid\+Munch} (int x, int y)\label{class_game_board_a68897815653f92727fff6cba9e07109b}
+
+\item 
+\hypertarget{class_game_board_a2003859542d5189c632c4ec02feab6a1}{}int {\bfseries get\+Student\+Score} ()\label{class_game_board_a2003859542d5189c632c4ec02feab6a1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class that creates a game board. 
+
+it creates a game board where the user could move around the board and munch letter grades.. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_game_board_a02e83c0384303c16e8155ca759b882d0}{}\index{Game\+Board@{Game\+Board}!Game\+Board@{Game\+Board}}
+\index{Game\+Board@{Game\+Board}!Game\+Board@{Game\+Board}}
+\subsubsection[{Game\+Board}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Board\+::\+Game\+Board (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}, }
+\item[{size\+\_\+t}]{board\+\_\+sz = {\ttfamily 10}, }
+\item[{size\+\_\+t}]{f\+\_\+spd = {\ttfamily 10}, }
+\item[{size\+\_\+t}]{num\+\_\+of\+\_\+f = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_game_board_a02e83c0384303c16e8155ca759b882d0}
+
+
+\hyperlink{class_game_board}{Game\+Board} constructor. 
+
+This constructs the board for the game. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & is the widget on which the board will be created. \\
+\hline
+{\em board\+\_\+sz} & is the size of the board. \\
+\hline
+{\em f\+\_\+spd} & is the speed at which the grade letter F will be moving accross the board. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_board_a48e19b4953c87cc5eea1f9152d09499e}{}\index{Game\+Board@{Game\+Board}!````~Game\+Board@{$\sim$\+Game\+Board}}
+\index{````~Game\+Board@{$\sim$\+Game\+Board}!Game\+Board@{Game\+Board}}
+\subsubsection[{$\sim$\+Game\+Board}]{\setlength{\rightskip}{0pt plus 5cm}Game\+Board\+::$\sim$\+Game\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a48e19b4953c87cc5eea1f9152d09499e}
+
+
+\hyperlink{class_game_board_a48e19b4953c87cc5eea1f9152d09499e}{Game\+Board\+::$\sim$\+Game\+Board}. 
+
+\hyperlink{class_game_board}{Game\+Board} deconstructor-\/ it deallocates the memory that was used. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_game_board_a3fdf1e6bfcc24a0930196be5fc3150c1}{}\index{Game\+Board@{Game\+Board}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!Game\+Board@{Game\+Board}}
+\subsubsection[{key\+Press\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::key\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Key\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a3fdf1e6bfcc24a0930196be5fc3150c1}
+
+
+\hyperlink{class_game_board_a3fdf1e6bfcc24a0930196be5fc3150c1}{Game\+Board\+::key\+Press\+Event}. 
+
+It identifies if the left,right,up,down, or spacebar keys were pressed and calls the update\+Student and munch\+Grade function. 
+\begin{DoxyParams}{Parameters}
+{\em event} & records the key from the keyboard that was pressed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_board_ad0652bc1afe57f5c90363ff23b085f1d}{}\index{Game\+Board@{Game\+Board}!munch\+Grade@{munch\+Grade}}
+\index{munch\+Grade@{munch\+Grade}!Game\+Board@{Game\+Board}}
+\subsubsection[{munch\+Grade}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::munch\+Grade (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_game_board_ad0652bc1afe57f5c90363ff23b085f1d}
+
+
+\hyperlink{class_game_board_ad0652bc1afe57f5c90363ff23b085f1d}{Game\+Board\+::munch\+Grade}. 
+
+It allows the student to munch the letter grade on the board. 
+\begin{DoxyParams}{Parameters}
+{\em x} & is the x-\/coordinate \\
+\hline
+{\em y} & is the y-\/coordinate \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_board_a07896dc68fa3dc7ab7206e20da4c8dea}{}\index{Game\+Board@{Game\+Board}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Game\+Board@{Game\+Board}}
+\subsubsection[{paint\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a07896dc68fa3dc7ab7206e20da4c8dea}
+
+
+\hyperlink{class_game_board_a07896dc68fa3dc7ab7206e20da4c8dea}{Game\+Board\+::paint\+Event}. 
+
+It sets the images(student and letter F) on their respective(current) location on the board. 
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_board_a8cf0f1726da9d4fdfe9d044d290aca9d}{}\index{Game\+Board@{Game\+Board}!show\+Event@{show\+Event}}
+\index{show\+Event@{show\+Event}!Game\+Board@{Game\+Board}}
+\subsubsection[{show\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::show\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Show\+Event $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a8cf0f1726da9d4fdfe9d044d290aca9d}
+
+
+\hyperlink{class_game_board_a8cf0f1726da9d4fdfe9d044d290aca9d}{Game\+Board\+::show\+Event}. 
+
+Sets the board as the main/active window and displays it 
+\begin{DoxyParams}{Parameters}
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_board_a705640e76fa5aaad98b40eec1a9ad9b1}{}\index{Game\+Board@{Game\+Board}!update\+After\+Munch@{update\+After\+Munch}}
+\index{update\+After\+Munch@{update\+After\+Munch}!Game\+Board@{Game\+Board}}
+\subsubsection[{update\+After\+Munch}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::update\+After\+Munch (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a705640e76fa5aaad98b40eec1a9ad9b1}
+
+
+\hyperlink{class_game_board_a705640e76fa5aaad98b40eec1a9ad9b1}{Game\+Board\+::update\+After\+Munch}. 
+
+It updates the 
+\begin{DoxyParams}{Parameters}
+{\em flag} & will determine \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_game_board_ae3c962a1819154c9f92910f1010019d3}{}\index{Game\+Board@{Game\+Board}!update\+Fs@{update\+Fs}}
+\index{update\+Fs@{update\+Fs}!Game\+Board@{Game\+Board}}
+\subsubsection[{update\+Fs}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::update\+Fs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_game_board_ae3c962a1819154c9f92910f1010019d3}
+
+
+It updates the location of the F\textquotesingle{}s. 
+
+It randomly updates the location of the F\textquotesingle{}s around the game board. \hypertarget{class_game_board_a41ac6cca98e3f787414574d1aeaac2d0}{}\index{Game\+Board@{Game\+Board}!update\+Student@{update\+Student}}
+\index{update\+Student@{update\+Student}!Game\+Board@{Game\+Board}}
+\subsubsection[{update\+Student}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+Board\+::update\+Student (
+\begin{DoxyParamCaption}
+\item[{int}]{px, }
+\item[{int}]{py, }
+\item[{int}]{nx, }
+\item[{int}]{ny}
+\end{DoxyParamCaption}
+)}\label{class_game_board_a41ac6cca98e3f787414574d1aeaac2d0}
+
+
+\hyperlink{class_game_board_a41ac6cca98e3f787414574d1aeaac2d0}{Game\+Board\+::update\+Student}. 
+
+It updates the position of the student on the board. 
+\begin{DoxyParams}{Parameters}
+{\em px} & is the previous x-\/coordinate of the student\textquotesingle{}s location on the board. \\
+\hline
+{\em py} & is the previous y-\/coordinate of the student\textquotesingle{}s location on the board. \\
+\hline
+{\em nx} & is the new x-\/coordinate of the student\textquotesingle{}s location on the board. \\
+\hline
+{\em ny} & is the new y-\/coordinate of the student\textquotesingle{}s location on the board. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gameboard.\+h\item 
+gameboard.\+cpp\end{DoxyCompactItemize}
